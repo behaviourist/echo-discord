@@ -11,7 +11,7 @@ module.exports.run = async (client, message, args) => {
         let embed = new MessageEmbed()
             .setTitle(command.config.name)
             .setColor('PURPLE')
-            .setFooter(`Any parameters where there are arrow brackets (<>) are needed.`)
+            .setFooter(`Any parameters where there are arrow brackets (<>) are required.`)
             .addField('Aliases', command.config.aliases.length > 0 ? command.config.aliases.join(", ") : "No Aliases")
             .addField('Parameters (Usage)', command.config.usage);
 
